@@ -80,7 +80,7 @@
           run = {
             description = "Run the project with ghcid auto-recompile";
             exec = ''
-              ghcid -c "cabal repl exe:haskell-template" --warnings -T :main
+              ghcid --warnings -T :main
             '';
             category = "Primary";
           };
